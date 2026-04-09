@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <div class="cursor"></div>
+
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">NovaX</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#cta">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2 class="fade-in">The Future of Web Designing</h2>
+      <p class="fade-in delay">Modern. Smooth. Powerful.</p>
+      <a href="#cta" class="btn fade-in delay2">Start Now</a>
+    </div>
+  </section>
+
+  
+  <section id="features" class="features">
+    <div class="card reveal">
+      <h3>⚡ Fast</h3>
+      <p>Smoothest visuals and Clean UI.</p>
+    </div>
+    <div class="card reveal">
+      <h3>📱 Responsive</h3>
+      <p>Looks perfect on phones, tablets, and desktops.</p>
+    </div>
+    <div class="card reveal">
+      <h3>🎨 Modern UI</h3>
+      <p>Clean Designing using latest UI trends.</p>
+    </div>
+  </section>
+
+  <section id="cta" class="cta">
+    <h2>Ready to Build?</h2>
+    <a href="#" class="btn big">Join Now</a>
+  </section>
+
+
+  <footer>
+    <p>© 2026 NovaX</p>
+  </footer>
+
+</body>
+<script>
+  const cursor = document.querySelector('.cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+</script>
+</html>
